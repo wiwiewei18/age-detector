@@ -10,7 +10,7 @@ def classify(image_url):
     """
     Classify the age of an image using the ViT model.
     """
-    classifier = pipeline(model="nateraw/vit-age-classifier")
+    classifier = pipeline("image-classification", model="nateraw/vit-age-classifier")
     return classifier(image_url)
 
 
